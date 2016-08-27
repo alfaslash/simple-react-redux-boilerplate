@@ -1,1 +1,6 @@
+# npm packajes
 /node_modules
+# Visual Studio Code settings 
+/.vscode
+# Compile bundles
+/build/*

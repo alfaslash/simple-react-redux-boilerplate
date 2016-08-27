@@ -4,5 +4,8 @@
         "react",
         "jsx-a11y"
     ],
-    "extends": "airbnb"
+    "extends": "airbnb",
+    "rules": {
+        "linebreak-style": ["error", "windows"]
+    }
 }
