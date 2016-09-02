@@ -2,32 +2,31 @@ import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { toJS } from 'immutable';
-import { customAction } from './actions/custom-action';
+import customAction from './actions/custom-action';
 
 class App extends Component {
-    constructor(props, context) {
-        super(props, context);
-        Object.assign(this, props, context);
-    }
+	constructor(props, context) {
+		super(props, context);
+		Object.assign(this, props, context);
+	}
 
-    render() {
-        return (
-            <div className="messages-container"></div>
-        );
-    }
+	render() {
+		return (
+			<div className="messages-container" />
+		);
+	}
 }
 
 function mapStateToProps(state) {
-    return {
+	return {
 		customReducer: state.get('customReducer').toJS()
-    };
+	};
 }
 
 function mapDispatchToProps(dispatch) {
-    return {
+	return {
 		customAction: bindActionCreators(customAction, dispatch)
-    };
+	};
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

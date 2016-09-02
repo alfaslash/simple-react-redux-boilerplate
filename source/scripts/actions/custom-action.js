@@ -8,8 +8,8 @@ function customActionCreator() {
 	};
 }
 
-export function customAction() {
+export default function customAction() {
 	return dispath => {
 		dispath(customActionCreator);
-	}
+	};
 }

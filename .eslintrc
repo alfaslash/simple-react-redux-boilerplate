@@ -6,6 +6,10 @@
     ],
     "extends": "airbnb",
     "rules": {
-        "linebreak-style": ["error", "windows"]
+        "linebreak-style": ["error", "windows"],
+        "react/jsx-indent": ["error", "tab"],
+        "react/jsx-indent-props": ["error", "tab"],
+        "indent": ["error", "tab"],
+        "comma-dangle": ["error", "never"]
     }
 }
