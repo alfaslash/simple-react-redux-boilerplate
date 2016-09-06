@@ -4,6 +4,7 @@
   "description": "Simple boilerplate for react-redux application",
   "main": "index.js",
   "scripts": {
+    "start": "node server",
     "test": "npm test"
   },
   "repository": {
@@ -43,9 +44,11 @@
     "eslint-plugin-import": "^1.14.0",
     "eslint-plugin-jsx-a11y": "^2.1.0",
     "eslint-plugin-react": "^6.1.2",
+    "extract-text-webpack-plugin": "^1.0.1",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.15.0"
+    "webpack-dev-server": "^1.15.0",
+    "webpack-hot-middleware": "^2.12.2"
   }
 }
